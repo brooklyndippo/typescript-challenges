@@ -1,9 +1,9 @@
 // Run the code here, no problems?
 
 function getPriceWithTax(amount, rate) {
-	const price = amount.toFixed(2)
+	const price = amount
 	const tax = price * rate
-	return (price + tax)
+	return (price + tax).toFixed(2)
 }
 
 const answer = getPriceWithTax(23.99, 9.5)

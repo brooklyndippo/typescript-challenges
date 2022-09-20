@@ -5,12 +5,12 @@
 
 type Snack = [string, number]
 
-const snack1 = ['Cookies', 142]
-const snack2 = ['Avocado', 234]
-const snack3 = ['Banana', 105]
+const snack1 : Snack = ['Cookies', 142]
+const snack2 : Snack = ['Avocado', 234]
+const snack3 : Snack = ['Banana', 105]
 
-function displayNutrition(food) {
-  `Item: ${food[0]} Calories: ${food[1]}`
+function displayNutrition(food : Snack) : string {
+  return `Item: ${food[0]} Calories: ${food[1]}`
 }
 
 console.log(displayNutrition(snack1))

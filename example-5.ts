@@ -9,11 +9,11 @@
 
 // https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types
 
-const snack1 = ['Cookies', 142]
-const snack2 = ['Avocado', 234]
-const snack3 = ['Banana', 105]
+const snack1 : [string, number] = ['Cookies', 142]
+const snack2 : [string, number]  = ['Avocado', 234]
+const snack3 : [string, number]  = ['Banana', 105]
 
-function displayNutrition(food) {
+function displayNutrition(food : [string, number]) : string {
   return `Item: ${food[0]} Calories: ${food[1]}`
 }
 

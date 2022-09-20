@@ -1,4 +1,5 @@
 // This function returns a function that returns a string
+// Add the types: 
 function sayHello() {
     return function () { return 'Hello!'; };
 }

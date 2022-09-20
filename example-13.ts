@@ -8,9 +8,9 @@
 
 // This function returns a function that returns a number
 
-function count() {
-	let n = 0
-	return () => {
+function count() : () => number {
+	let n : number = 0
+	return () : number  => {
 		return n += 1
 	}
 }
@@ -18,7 +18,7 @@ function count() {
 // This function takes an array and returns an item from
 // the array
 
-function next(arr) {
+function next(arr: Array<any>): () => any {
 	let i = -1
 	return () => {
 		i += 1
@@ -30,8 +30,8 @@ function next(arr) {
 // This function returns a function that generates a 
 // die roll. 
 
-function dice(sides) {
-	return (n) => {
+function dice(sides: number): (n: number) => number {
+	return (n: number): number => {
 		return Math.floor(Math.random() * sides) * n
 	}
 }

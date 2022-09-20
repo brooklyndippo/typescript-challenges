@@ -11,14 +11,14 @@
 // The second should type string
 // Add the types for the function and other variables
 
-const nums = []
-const chars = []
+const nums : Array<number> = []
+const chars : Array<string> = []
 
-function random(n) {
+function random(n : number) : number {
   return Math.floor(Math.random() * n)
 }
 
-function randomChar() {
+function randomChar() : string {
   return String.fromCharCode(random(26) + 97)
 }
 
